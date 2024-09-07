@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.GestionPedidos.API", "Galaxy.GestionPedidos.API\Galaxy.GestionPedidos.API.csproj", "{149C1055-A746-4EF7-9943-9007EFA840BA}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Galaxy.GestionPedidos.BaseDatos", "Galaxy.GestionPedidos.BaseDatos\Galaxy.GestionPedidos.BaseDatos.sqlproj", "{79F39E67-AC4C-46D9-830B-0B0343A46C92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Capa Base Datos", "01.Capa Base Datos", "{879580A3-3BA1-4BCE-ACB9-80FB99285243}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.Capa Presentacion", "05.Capa Presentacion", "{C47E45E8-C078-4F64-A869-915B3A4601BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Capa Acceso a Datos", "02.Capa Acceso a Datos", "{5EAB0B1D-BE61-42A9-B1B0-B8B40F95FCD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.GestionPedidos.AccesoDatos", "Galaxy.GestionPedidos.AccesoDatos\Galaxy.GestionPedidos.AccesoDatos.csproj", "{961C4D21-6020-450C-8031-865FA3698463}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Capa Negocio", "03.Capa Negocio", "{9B2F55FC-6631-4E67-A76E-9890A14CB817}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.GestionPedidos.Repositorios", "Galaxy.GestionPedidos.Repositorios\Galaxy.GestionPedidos.Repositorios.csproj", "{0261DAAF-19F0-4DBF-983E-EF9AF6166916}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Galaxy.GestionPedidos.Entidades", "Galaxy.GestionPedidos.Entidades\Galaxy.GestionPedidos.Entidades.csproj", "{EF0841AB-B237-4CB7-B7D6-1777DA661C2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.GestionPedidos.Servicios", "Galaxy.GestionPedidos.Servicios\Galaxy.GestionPedidos.Servicios.csproj", "{8640322E-6AD4-43E9-8C59-E87CB8097A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaxy.GestionPedidos.Comun", "Galaxy.GestionPedidos.Comun\Galaxy.GestionPedidos.Comun.csproj", "{C237FE2E-8D2F-4837-9CB0-A3D26E143E4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Capa Transversal", "04.Capa Transversal", "{6FE02212-F157-4544-9918-A18551375D06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{149C1055-A746-4EF7-9943-9007EFA840BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149C1055-A746-4EF7-9943-9007EFA840BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{149C1055-A746-4EF7-9943-9007EFA840BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149C1055-A746-4EF7-9943-9007EFA840BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F39E67-AC4C-46D9-830B-0B0343A46C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F39E67-AC4C-46D9-830B-0B0343A46C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F39E67-AC4C-46D9-830B-0B0343A46C92}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{79F39E67-AC4C-46D9-830B-0B0343A46C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F39E67-AC4C-46D9-830B-0B0343A46C92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79F39E67-AC4C-46D9-830B-0B0343A46C92}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{961C4D21-6020-450C-8031-865FA3698463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961C4D21-6020-450C-8031-865FA3698463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961C4D21-6020-450C-8031-865FA3698463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961C4D21-6020-450C-8031-865FA3698463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0261DAAF-19F0-4DBF-983E-EF9AF6166916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0261DAAF-19F0-4DBF-983E-EF9AF6166916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0261DAAF-19F0-4DBF-983E-EF9AF6166916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0261DAAF-19F0-4DBF-983E-EF9AF6166916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF0841AB-B237-4CB7-B7D6-1777DA661C2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF0841AB-B237-4CB7-B7D6-1777DA661C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF0841AB-B237-4CB7-B7D6-1777DA661C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF0841AB-B237-4CB7-B7D6-1777DA661C2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8640322E-6AD4-43E9-8C59-E87CB8097A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8640322E-6AD4-43E9-8C59-E87CB8097A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8640322E-6AD4-43E9-8C59-E87CB8097A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8640322E-6AD4-43E9-8C59-E87CB8097A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C237FE2E-8D2F-4837-9CB0-A3D26E143E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C237FE2E-8D2F-4837-9CB0-A3D26E143E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C237FE2E-8D2F-4837-9CB0-A3D26E143E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C237FE2E-8D2F-4837-9CB0-A3D26E143E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{149C1055-A746-4EF7-9943-9007EFA840BA} = {C47E45E8-C078-4F64-A869-915B3A4601BB}
+		{79F39E67-AC4C-46D9-830B-0B0343A46C92} = {879580A3-3BA1-4BCE-ACB9-80FB99285243}
+		{961C4D21-6020-450C-8031-865FA3698463} = {5EAB0B1D-BE61-42A9-B1B0-B8B40F95FCD7}
+		{0261DAAF-19F0-4DBF-983E-EF9AF6166916} = {9B2F55FC-6631-4E67-A76E-9890A14CB817}
+		{EF0841AB-B237-4CB7-B7D6-1777DA661C2F} = {5EAB0B1D-BE61-42A9-B1B0-B8B40F95FCD7}
+		{8640322E-6AD4-43E9-8C59-E87CB8097A3E} = {9B2F55FC-6631-4E67-A76E-9890A14CB817}
+		{C237FE2E-8D2F-4837-9CB0-A3D26E143E4A} = {6FE02212-F157-4544-9918-A18551375D06}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {557E908B-7073-4A47-A2CA-952C2E0F627B}
+	EndGlobalSection
+EndGlobal

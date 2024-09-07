@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Galaxy.GestionPedidos.AccesoDatos\Galaxy.GestionPedidos.AccesoDatos.csproj" />
+    <ProjectReference Include="..\Galaxy.GestionPedidos.Comun\Galaxy.GestionPedidos.Comun.csproj" />
+    <ProjectReference Include="..\Galaxy.GestionPedidos.Entidades\Galaxy.GestionPedidos.Entidades.csproj" />
+  </ItemGroup>
+
+</Project>

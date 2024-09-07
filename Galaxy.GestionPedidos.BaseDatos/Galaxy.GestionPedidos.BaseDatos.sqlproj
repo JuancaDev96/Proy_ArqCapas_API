@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Galaxy.GestionPedidos.BaseDatos</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{79f39e67-ac4c-46d9-830b-0b0343a46c92}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Galaxy.GestionPedidos.BaseDatos</RootNamespace>
+    <AssemblyName>Galaxy.GestionPedidos.BaseDatos</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="DDL" />
+    <Folder Include="DML" />
+    <Folder Include="DDL\Tablas" />
+    <Folder Include="DDL\Procedimiento Almacenados" />
+    <Folder Include="DDL\Vistas" />
+    <Folder Include="DDL\Funciones" />
+    <Folder Include="DDL_PostgreSQL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="DDL\Tablas\TbCliente.sql" />
+    <Build Include="DDL\Tablas\TbMaestro.sql" />
+    <Build Include="DDL\Tablas\TbMaestroDetalle.sql" />
+    <Build Include="DDL\Tablas\TbProducto.sql" />
+    <Build Include="DDL\Tablas\TbProveedor.sql" />
+    <Build Include="DDL\Tablas\TbProveedorProducto.sql" />
+    <Build Include="DDL\Tablas\TbPedido.sql" />
+    <Build Include="DDL\Tablas\TbPedidoDetalle.sql" />
+    <Build Include="DDL\Tablas\TbTrackingPedido.sql" />
+    <Build Include="DDL\Vistas\Vw_Maestros.sql" />
+    <Build Include="DDL\Procedimiento Almacenados\SpInsertarProducto.sql" />
+    <Build Include="DDL\Funciones\Fn_ObtenerMaestroPorCodigo.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Galaxy.GestionPedidos.BaseDatos.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="DML\CargaMaestros.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Galaxy.GestionPedidos.BaseDatos.publish.xml" />
+  </ItemGroup>
+</Project>

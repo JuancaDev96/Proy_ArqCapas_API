@@ -1,0 +1,1 @@
+﻿dotnet ef dbcontext scaffold "server=localhost,1400; database=BdPedidos; user=sa; password=Password2024#; encrypt=false;" Microsoft.EntityframeworkCore.SqlServer -o Contexto

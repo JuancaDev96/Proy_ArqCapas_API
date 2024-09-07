@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="17d48696-c219-4a89-b2fe-2975dd98ca87" ChangeDateTime="09/04/2024 02:48:49">
+    <Property Name="ElementName" Value="[dbo].[TbCliente].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TbCliente]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IdCliente" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="15f78c8e-1ee3-4cc6-9277-ff762210f5a0" ChangeDateTime="09/04/2024 02:49:32">
+    <Property Name="ElementName" Value="[dbo].[TbCliente].[IdCliente]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TbCliente]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b8ca6a98-71c3-4c69-8d95-e5e88437ccb6" ChangeDateTime="09/04/2024 02:49:59">
+    <Property Name="ElementName" Value="[dbo].[TbCliente].[NombreCliente]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TbCliente]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RazonSocial" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="84173411-55b0-4783-9986-d3ccdf6d12b9" ChangeDateTime="09/04/2024 02:54:40">
+    <Property Name="ElementName" Value="[dbo].[TbCliente].[DocumentiIdentidad]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TbCliente]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DocumentoIdentidad" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4a1cb317-64cd-4f4c-b096-1b01be12fe79" ChangeDateTime="09/04/2024 03:21:49">
+    <Property Name="ElementName" Value="[dbo].[FK_TbProveedorProducto_ToProveedor]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[TbProveedorProducto]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_TbProveedorProducto_TbProveedor]" />
+  </Operation>
+</Operations>
