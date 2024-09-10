@@ -77,6 +77,8 @@
     <Build Include="DDL\Vistas\Vw_Maestros.sql" />
     <Build Include="DDL\Procedimiento Almacenados\SpInsertarProducto.sql" />
     <Build Include="DDL\Funciones\Fn_ObtenerMaestroPorCodigo.sql" />
+    <Build Include="DDL_PostgreSQL\TablasSeguridadPostgreSQL.sql" />
+    <Build Include="DDL_PostgreSQL\ObtenerColaboradorPorUsuario.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Galaxy.GestionPedidos.BaseDatos.refactorlog" />
@@ -86,5 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Galaxy.GestionPedidos.BaseDatos.publish.xml" />
+    <None Include="DDL_PostgreSQL\inserts.sql" />
   </ItemGroup>
 </Project>

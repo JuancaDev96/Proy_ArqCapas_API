@@ -19,8 +19,15 @@ builder.Services.AddDbContext<BdPedidosContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("BdPedidos"));
 });
 
+builder.Services.AddDbContext<SeguridadDbContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("BdSeguridad"));
+});
+
 builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
 builder.Services.AddScoped<IProductoService, ProductoService>();
+builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
+builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 
 var app = builder.Build();
 

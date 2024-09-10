@@ -9,4 +9,5 @@ namespace Galaxy.GestionPedidos.Repositorios.Interfaces;
 public interface IProductoRepository : IRepositoryBase<TbProducto>
 {
     Task<ResponsePaginacionDto<ListaProductoDtoResponse>> ListarAsync(PaginacionDtoRequest request);
+    Task<ResponseBaseDto> Registrar(ProductoDtoRequest request);
 }

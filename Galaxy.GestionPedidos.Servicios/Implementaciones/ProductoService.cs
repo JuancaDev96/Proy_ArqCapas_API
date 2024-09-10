@@ -21,6 +21,11 @@ namespace Galaxy.GestionPedidos.Servicios.Implementaciones
             _productoRepository = productoRepository;
         }
 
+        public async Task<ResponseBaseDto> CreateAsync(ProductoDtoRequest request)
+        {
+            return await _productoRepository.Registrar(request);
+        }
+
         public async Task<ResponseBaseDto<ProductoDtoResponse>> RegistrarAsync(ProductoDtoRequest request)
         {
             ResponseBaseDto<ProductoDtoResponse> respuesta = new ResponseBaseDto<ProductoDtoResponse>();

@@ -12,6 +12,7 @@ namespace Galaxy.GestionPedidos.Servicios.Interfaces
 {
     public interface IProductoService
     {
+        Task<ResponseBaseDto> CreateAsync(ProductoDtoRequest request);
         Task<ResponseBaseDto<ProductoDtoResponse>> RegistrarAsync(ProductoDtoRequest request);
         Task<ResponsePaginacionDto<ListaProductoDtoResponse>> ListarAsync(PaginacionDtoRequest request);
         Task<ResponsePaginacionDto<ListaProductoDtoResponse>> Listar(PaginacionDtoRequest request);
