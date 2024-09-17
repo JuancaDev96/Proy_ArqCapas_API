@@ -3,6 +3,7 @@ using Galaxy.GestionPedidos.Repositorios.Implementaciones;
 using Galaxy.GestionPedidos.Repositorios.Interfaces;
 using Galaxy.GestionPedidos.Servicios.Implementaciones;
 using Galaxy.GestionPedidos.Servicios.Interfaces;
+using Galaxy.GestionPedidos.Servicios.Mappers;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,6 +29,11 @@ builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
 builder.Services.AddScoped<IProductoService, ProductoService>();
 builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+
+builder.Services.AddAutoMapper(config =>
+{
+    config.AddProfile<ProductoProfile>();
+});
 
 var app = builder.Build();
 

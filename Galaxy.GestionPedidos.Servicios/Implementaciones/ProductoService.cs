@@ -1,4 +1,5 @@
-﻿using Galaxy.GestionPedidos.Comun.DTO.Request;
+﻿using AutoMapper;
+using Galaxy.GestionPedidos.Comun.DTO.Request;
 using Galaxy.GestionPedidos.Comun.DTO.Request.Producto;
 using Galaxy.GestionPedidos.Comun.DTO.Response;
 using Galaxy.GestionPedidos.Comun.DTO.Response.Producto;
@@ -16,9 +17,11 @@ namespace Galaxy.GestionPedidos.Servicios.Implementaciones
     public class ProductoService : IProductoService
     {
         private IProductoRepository _productoRepository;
-        public ProductoService(IProductoRepository productoRepository)
+        private IMapper _mapper; 
+        public ProductoService(IProductoRepository productoRepository, IMapper mapper)
         {
             _productoRepository = productoRepository;
+            _mapper = mapper;
         }
 
         public async Task<ResponseBaseDto> CreateAsync(ProductoDtoRequest request)
@@ -31,23 +34,12 @@ namespace Galaxy.GestionPedidos.Servicios.Implementaciones
             ResponseBaseDto<ProductoDtoResponse> respuesta = new ResponseBaseDto<ProductoDtoResponse>();
             try
             {
-                TbProducto producto = new()
-                {
-                    Descripcion = request.Descripcion,
-                    Nombre = request.Nombre,
-                    IdMaeCategoria = request.IdMaeCategoria,
-                    IdMaeMarca = request.IdMaeMarca
-                };
+
+                var producto = _mapper.Map<TbProducto>(request);
 
                 var resultado = await _productoRepository.AddAsync(producto);
 
-                ProductoDtoResponse nuevo = new()
-                {
-                    Nombre = resultado.Nombre,
-                    Descripcion = resultado.Descripcion,
-                    IdMaeCategoria = resultado.IdMaeCategoria,
-                    IdMaeMarca = resultado.IdMaeMarca
-                };
+                var nuevo = _mapper.Map<ProductoDtoResponse>(resultado);
 
                 respuesta.Data = nuevo;
                 respuesta.Message = "Producto registrado exitosamente";

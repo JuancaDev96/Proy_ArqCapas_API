@@ -20,7 +20,7 @@ namespace Galaxy.GestionPedidos.API.Controllers
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery]PaginacionDtoRequest request)
         {
-            var result = await _productoService.ListarAsync(request);
+            var result = await _productoService.Listar(request);
 
             return result.Success ? Ok(result) : BadRequest(result);
         }
@@ -28,7 +28,7 @@ namespace Galaxy.GestionPedidos.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(ProductoDtoRequest request)
         {
-            var result = await _productoService.CreateAsync(request);
+            var result = await _productoService.RegistrarAsync(request);
 
             return result.Success ? Ok(result) : BadRequest(result);
         }

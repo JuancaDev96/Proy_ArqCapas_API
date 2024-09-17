@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Galaxy.GestionPedidos.Comun\Galaxy.GestionPedidos.Comun.csproj" />
     <ProjectReference Include="..\Galaxy.GestionPedidos.Repositorios\Galaxy.GestionPedidos.Repositorios.csproj" />
   </ItemGroup>
